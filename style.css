@@ -1,0 +1,712 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #232f3e;
+  color: white;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo img {
+  height: 30px;
+  filter: invert();
+}
+
+/* Location Section */
+.location {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.location-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.location-bold {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.large {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-select {
+  background: #f3f3f3;
+  border: none;
+  padding: 10px 0;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 10px 100px;
+  font-size: 14px;
+}
+
+.search-button {
+  background-color: #febd69;
+  border: none;
+  padding: 10px 12px;
+  width: 50px;
+  cursor: pointer;
+}
+
+/* Flag + Lang */
+.flag-lang {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.flag-lang img {
+  width: 20px;
+}
+
+.dropdown-select select {
+  background: #232f3e;
+  color: white;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Account Section */
+.navbar-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-section {
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.large {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: -200px;
+  transform: none;
+  background: white;
+  border: 1px solid #ccc;
+  width: 480px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.large:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown-top {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.sign-in-btn {
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 8px 50px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.dropdown-top p {
+  color: black;
+  font-size: 14px;
+}
+
+.dropdown-top a {
+  color: #0073bb;
+  text-decoration: none;
+}
+
+.dropdown-top a:hover {
+  text-decoration: underline;
+}
+
+.horizontal-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.dropdown-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dropdown-left {
+  width: 45%;
+  padding-right: 10px;
+}
+
+.dropdown-right {
+  width: 50%;
+  padding-left: 10px;
+}
+
+.vertical-divider {
+  width: 1px;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+
+.dropdown-left ul,
+.dropdown-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-left ul li,
+.dropdown-right ul li {
+  color: black;
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  background-color: #232f3e;
+  color: white;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      background-color: #232f3e;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      cursor: pointer;
+      flex-grow: 1;
+    }
+
+    .menu > div {
+      color: white;
+      user-select: none;
+    }
+
+    .menu > div:hover {
+      color: #d9dadb;
+    }
+
+    /* Profile Section */
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .profile img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #00ff26;
+    }
+
+    /* Slide Menu styles */
+    .slide-menu {
+      position: fixed;
+      top: 0;
+      left: -320px; /* Hidden by default */
+      width: 320px;
+      height: 100%;
+      background-color: #131921;
+      color: white;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+      overflow-y: auto;
+      transition: left 0.3s ease;
+      padding: 20px;
+      z-index: 2000;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .slide-menu.open {
+      left: 0;
+    }
+
+    /* Close button */
+    .slide-menu .close-btn {
+      align-self: flex-end;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+
+    /* Headings */
+    .slide-menu h3 {
+      border-bottom: 1px solid #3a4553;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    /* Lists */
+    .slide-menu ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0 0 20px 0;
+    }
+
+    .slide-menu ul li {
+      padding: 6px 0;
+      cursor: pointer;
+    }
+
+    .slide-menu ul li:hover {
+      background-color: #37475a;
+    }
+
+    /* Horizontal line separator */
+    .slide-menu .section-separator {
+      height: 1px;
+      background-color: #3a4553;
+      margin: 10px 0 20px 0;
+    }
+
+    /* World icon and flag - example with emoji for simplicity */
+    .language-select {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .language-select .flag {
+      font-size: 20px;
+    }
+
+    /* Scrollbar style for slide menu */
+    .slide-menu::-webkit-scrollbar {
+      width: 6px;
+    }
+    .slide-menu::-webkit-scrollbar-thumb {
+      background-color: #555;
+      border-radius: 3px;
+    }
+
+    /* Slide menu profile */
+    .slide-profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .slide-profile img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: contain;
+      border: 5px solid #00ff26;
+      object-fit: cover;
+    }
+
+    /* File input style */
+    #uploadContainer {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: #232f3e;
+      padding: 10px;
+      border-radius: 8px;
+      color: white;
+      font-size: 14px;
+      z-index: 2100;
+    }
+
+    #uploadContainer label {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    #uploadInput {
+      display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.location {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+}
+
+.location-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.location-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-small {
+  font-size: 12px;
+  color: #ddd;
+}
+
+.location-bold {
+  font-weight: bold;
+}
+
+/* Dropdown menu styling */
+.location-dropdown {
+  display: none;
+  position: absolute;
+  left: 50px;
+  background-color: white;
+  color: #000;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.location-dropdown h3 {
+  margin: 10px 0 5px;
+}
+
+.location-dropdown p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.sign-in-btn,
+.apply-btn,
+.done-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  background-color: #f44336;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.zip-input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.location-name {
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.or-ship {
+  font-size: 13px;
+  color: #333;
+}
+
+.close-dropdown {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #232f3e;
+    color: white;
+    padding: 10px 20px;
+  }
+
+  .menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+    flex-grow: 1;
+  }
+
+  .menu > div {
+    color: white;
+    user-select: none;
+  }
+
+  .menu > div:hover {
+    color: #d9dadb;
+  }
+
+  /* Profile Section - without image */
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  /* Slide Menu styles */
+  .slide-menu {
+    position: fixed;
+    top: 0;
+    left: -320px; /* Hidden by default */
+    width: 320px;
+    height: 100%;
+    background-color: #131921;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slide-menu.open {
+    left: 0;
+  }
+
+  /* Close button */
+  .slide-menu .close-btn {
+    align-self: flex-end;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+
+  /* Profile inside slide menu */
+  .slide-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .slide-profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 5px solid #00ff26;
+    object-fit: cover;
+  }
+
+  /* Upload input - hidden */
+  #uploadInput {
+    display: none;
+  }
+
+  /* Headings */
+  .slide-menu h3 {
+    border-bottom: 1px solid #3a4553;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  /* Lists */
+  .slide-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 20px 0;
+  }
+
+  .slide-menu ul li {
+    padding: 6px 0;
+    cursor: pointer;
+  }
+
+  .slide-menu ul li:hover {
+    background-color: #37475a;
+  }
+
+  /* Horizontal line separator */
+  .slide-menu .section-separator {
+    height: 1px;
+    background-color: #3a4553;
+    margin: 10px 0 20px 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

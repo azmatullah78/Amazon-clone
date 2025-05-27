@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Navbar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <!-- Amazon Logo -->
+    <a class="logo" href="https://www.amazon.com/">
+      <img src="Amazon_logo.svg" alt="Amazon Logo">
+    </a>
+
+    <!-- Location -->
+    <!-- Location Section -->
+    <div class="location" id="locationBtn">
+      <div class="location-icon">
+        <!-- SVG Location Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="18" viewBox="0 0 24 24" width="18">
+          <path d="M0 0h24v24H0V0z" fill="none" />
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5
+        c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 
+        2.5-2.5 2.5 1.12 2.5 2.5S13.38 
+        11.5 12 11.5z" />
+        </svg>
+
+        <div class="location-text">
+          <div class="location-small">Delivery to</div>
+          <div class="location-bold">Pakistan</div>
+        </div>
+      </div>
+
+      <!-- Dropdown Menu -->
+      <div class="location-dropdown" id="locationDropdown">
+        <span class="close-dropdown" id="closeDropdown">&times;</span>
+
+        <h3>Choose your location</h3>
+        <p>Delivery options and delivery speeds may vary for different locations</p>
+
+        <button class="sign-in-btn">Sign in to see your addresses</button>
+        <input type="text" placeholder="Enter a US zip code" class="zip-input" />
+        <button class="apply-btn">Apply</button>
+
+        <p class="or-ship">or <a href="#">ship outside the US</a></p>
+
+        <div class="location-name">Pakistan</div>
+        <div class="location-name">Pakistan</div>
+
+        <button class="done-btn">Done</button>
+      </div>
+    </div>
+
+
+
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <select class="search-select">
+        <option>ALL</option>
+        <option>Smartphones</option>
+        <option>Smartwatches</option>
+        <option>Bluetooth Earbuds</option>
+        <option>Gaming Consoles</option>
+        <option>Laptops</option>
+        <option>Power Banks</option>
+        <option>Drones</option>
+        <option>Action Cameras</option>
+        <option>Wireless Speakers</option>
+        <option>VR Headsets</option>
+      </select>
+
+      <input class="search-input" type="text" placeholder="Search Amazon">
+      <button class="search-button">🔍</button>
+    </div>
+
+    <!-- Language Select -->
+    <div class="flag-lang">
+      <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag">
+      <div class="dropdown-select">
+        <select>
+          <option>ENG </option>
+          <option>Urdu</option>
+          <option>Arabic</option>
+        </select>
+      </div>
+    </div>
+
+
+
+
+    <div class="navbar-section">
+      <div>Hello, Sign in</div>
+
+      <div class="large" id="accountBtn">Account & Lists
+        <div class="dropdown-menu" id="dropdownMenu">
+          <!-- Top Section -->
+          <div class="dropdown-top">
+            <button class="sign-in-btn" onclick="window.location.href='login.html'">Sign in</button>
+            <p>New customer? <a href="login.html">Start here.</a></p>
+          </div>
+
+          <div class="horizontal-divider"></div>
+
+          <!-- Bottom Section -->
+          <div class="dropdown-bottom">
+            <div class="dropdown-left">
+              <ul>
+                <li>Your Lists</li>
+                <li>Create a List</li>
+                <li>Find a List or Registry</li>
+              </ul>
+            </div>
+            <div class="vertical-divider"></div>
+            <div class="dropdown-right">
+              <ul>
+                <li><a href="order.html">Your Account</a></li>
+                <li><a href="order.html">Account</a></li>
+                <li><a href="order.html">Orders</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="browsing-history.html">Browsing History</a></li>
+                <li><a href="watchlist.html">Watchlist</a></li>
+                <li><a href="video-purchases.html">Video Purchases & Rentals</a></li>
+                <li><a href="kindle-unlimited.html">Kindle Unlimited</a></li>
+                <li><a href="content-devices.html">Content & Devices</a></li>
+                <li><a href="subscribe-save.html">Subscribe & Save Items</a></li>
+                <li><a href="memberships.html">Memberships & Subscriptions</a></li>
+                <li><a href="music-library.html">Music Library</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-nav">
+      <div class="nav-item">Returns<br>& Orders</div>
+      <div class="nav-item cart">
+        <span class="cart-count">🛒0</span>
+        <span class="cart-text">Cart</span>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="navbar">
+  <div class="menu">
+    <div id="allBtn">◀ All</div>
+    <div>Today's Deals</div>
+    <div>Registry</div>
+    <div>Prime Video</div>
+    <div>Gift Cards</div>
+    <div>Customer Service</div>
+    <div>Sell</div>
+  </div>
+
+<!-- Slide Menu -->
+<div class="slide-menu" id="slideMenu">
+  <button class="close-btn" id="closeBtn">&times;</button>
+
+  <!-- Profile section inside slide menu with image -->
+  <div class="slide-profile" id="slideProfile" title="Profile">
+    <img src="https://via.placeholder.com/32" alt="Profile Photo" id="slideProfilePhoto" />
+    <div>Hello, Sign in</div>
+  </div>
+
+  <h3>Digital Content & Devices</h3>
+  <ul>
+    <li>Prime Video</li>
+    <li>Amazon Music</li>
+    <li>Kindle E-readers & Books</li>
+    <li>Amazon Appstore</li>
+  </ul>
+
+  <div class="section-separator"></div>
+
+  <h3>Shop by Department</h3>
+  <ul>
+    <li>Electronics</li>
+    <li>Computers</li>
+    <li>Smart Home</li>
+    <li>Arts & Crafts</li>
+    <li>See all</li>
+  </ul>
+
+  <div class="section-separator"></div>
+
+  <h3>Programs & Features</h3>
+  <ul>
+    <li>Gift Cards</li>
+    <li>Shop By Interest</li>
+    <li>Amazon Live</li>
+    <li>International Shopping</li>
+    <li>See all</li>
+  </ul>
+
+  <div class="section-separator"></div>
+
+  <h3>Help & Settings</h3>
+  <ul>
+    <li>Your Account</li>
+    <li>Customer Service</li>
+    <li>Sign in</li>
+  </ul>
+
+  <!-- Hidden file input for upload -->
+  <input type="file" id="uploadInput" accept="image/*" />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>
+  <div class="carousel">
+    <img src="logo1.jpg" alt="Image 1" class="active" />
+    <!-- <img src="logo2.jpg" alt="Image 2" />
+    <img src="logo3.jpg" alt="Image 3" />
+    <img src="logo4.jpg" alt="Image 4" />
+    <img src="logo5.jpg" alt="Image 5" /> -->
+  </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  const allBtn = document.getElementById('allBtn');
+  const slideMenu = document.getElementById('slideMenu');
+  const closeBtn = document.getElementById('closeBtn');
+
+  const slideProfilePhoto = document.getElementById('slideProfilePhoto');
+
+  const navbarProfile = document.getElementById('navbarProfile');
+  const slideProfile = document.getElementById('slideProfile');
+
+  const uploadInput = document.getElementById('uploadInput');
+
+  // Load saved image from localStorage ONLY in slide menu photo
+  const savedImage = localStorage.getItem('profileImage');
+  if (savedImage) {
+    slideProfilePhoto.src = savedImage;
+  }
+
+  // Open slide menu on All button click
+  allBtn.addEventListener('click', () => {
+    slideMenu.classList.add('open');
+  });
+
+  // Close slide menu
+  closeBtn.addEventListener('click', () => {
+    slideMenu.classList.remove('open');
+  });
+
+  // Close slide menu if clicked outside except allowed areas
+  window.addEventListener('click', (e) => {
+    if (
+      !slideMenu.contains(e.target) &&
+      e.target !== allBtn &&
+      e.target !== uploadInput &&
+      e.target !== navbarProfile &&
+      e.target !== slideProfile
+    ) {
+      slideMenu.classList.remove('open');
+    }
+  });
+
+  // Open file picker on profile text click (navbar or slide menu)
+  navbarProfile.addEventListener('click', () => {
+    uploadInput.click();
+  });
+
+  slideProfile.addEventListener('click', () => {
+    uploadInput.click();
+  });
+
+  // On file select, update slide menu photo and save in localStorage
+  uploadInput.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(evt) {
+        const imgData = evt.target.result;
+        slideProfilePhoto.src = imgData;
+        localStorage.setItem('profileImage', imgData);
+      };
+      reader.readAsDataURL(file);
+      uploadInput.value = "";
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      const locationBtn = document.getElementById("locationBtn");
+      const locationDropdown = document.getElementById("locationDropdown");
+      const closeDropdown = document.getElementById("closeDropdown");
+
+      locationBtn.addEventListener("click", (e) => {
+        // Prevent closing if clicking inside dropdown
+        if (!locationDropdown.contains(e.target)) {
+          locationDropdown.style.display = "block";
+        }
+      });
+
+      closeDropdown.addEventListener("click", () => {
+        locationDropdown.style.display = "none";
+      });
+
+      // Optional: click outside to close
+      window.addEventListener("click", (e) => {
+        if (!locationBtn.contains(e.target)) {
+          locationDropdown.style.display = "none";
+        }
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
